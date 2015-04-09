@@ -22,7 +22,7 @@ var message = {
 };
 
 setInterval(function() {
-    ping.sys.probe('8.8.8.3', function(isAlive) {
+    ping.sys.probe('8.8.8.8', function(isAlive) {
         if (!isAlive) {
 
             now = new Date().toString();
