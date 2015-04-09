@@ -1,1 +1,7 @@
-apt-get install -y iputils-ping
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+
+apt-get -q update
+apt-get -y install iputils-ping
